@@ -1,0 +1,17 @@
+---
+---
+
+@mixin border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius:    $radius
+    -ms-border-radius:     $radius
+    border-radius:         $radius
+
+div.card
+    width: 500px
+    border: 2px solid #404
+    background-color: #ffa
+    +border-radius(15px)
+
+.center
+    text-align: center
