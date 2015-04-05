@@ -32,7 +32,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Foodradar</a>
+          <a class="navbar-brand" href="#">Food Radar Project</a>
         </div>
       </div>
     </nav>
@@ -40,11 +40,21 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>ยินดีต้อนรับ</h1>
-        <p>รายงานฉบับนี้เป็นส่วนหนึ่งของวิชาสาธารณสุข โดยมีจุดประสงค์ เพื่อการศึกษาความรู้ในเรื่องอาหาร ซึ่งรายงานนี้มีเนื้อหาความรู้เกี่ยวกับ อาหาร, ขนม ตลอดจน คุณค่าทางโภชนาการ ผู้จัดทำได้เลือกหัวข้อนี้ในการทำรายงาน เนื่องมาจากเป็นเรื่องที่น่าสนใจและควรค่าแก่การศึกษา</p>
-        <!--
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-        -->
+        <h1>อาหารที่เรากินประกอบขึ้นจากอะไรบ้าง?</h1>
+        <p>ปริมาณสารอาหารที่ได้รับจากอาหารแต่ละชนิดในปริมาณ 100 ก.</p>
+        <p>
+          <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="true">เรียงตาม <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">ปริมาณแคลอรี</a></li>
+              <li class="divider"></li>
+              <li><a href="#">คาร์โบไฮเดรต</a></li>
+              <li><a href="#">โปรตีน</a></li>
+              <li><a href="#">ไขมัน</a></li>
+              <li><a href="#">กากใยอาหาร</a></li>
+            </ul>
+          </div>
+        </p>
       </div>
     </div>
 
@@ -52,7 +62,24 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12 index" id="foods">
-
+          <div class="item">
+            <div id="radar-chart-0"></div>
+            <div class="item-label">
+              <div class="cal">
+                420 <span class="unit">kcal</span>
+              </div>
+              ข้าวกะเพราปลาหมึก
+            </div>
+          </div>
+          <div class="item">
+            <div id="radar-chart-1"></div>
+            <div class="item-label">
+              <div class="cal">
+                300 <span class="unit">kcal</span>
+              </div>
+              มะม่วงน้ำปลาหวาน
+            </div>
+          </div>
           <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
         </div>
       </div>
@@ -60,7 +87,9 @@
       <hr>
 
       <footer>
-        <p>&copy; 2015: saengsith, scomma, and neizod</p>
+        <p>
+          งานชิ้นนี้เผยแพร่ภายใต้สัญญาอนุญาต <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+        </p>
       </footer>
     </div> <!-- /container -->
 
