@@ -11,7 +11,7 @@ foo = (data, index=0) ->
         sample[key] = value[index]
     console.log sample
     d3.select('#food-name').html(sample.foodNameTH)
-    candidate = ['water', 'protein', 'fat', 'carbohydrate', 'fiber']
+    candidate = ['water', 'protein', 'fat', 'carbohydrate', 'fiberInsoluble']
     transform = (it) ->
         ({axis: key, value: v} for key, v of it when key in candidate)
     it = [transform(sample)]
