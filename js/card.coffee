@@ -29,6 +29,6 @@ card = (data, index=0) ->
 $ ->
     $.getJSON 'data/foodNutrition.json', (data) ->
         no_foods = data.foodNameTH.length
-        $('#foods').html(card(data, index) for index in [0..no_foods])
-        for index in [0..no_foods]
+        $('#foods').html(card(data, index) for index in [0...no_foods])
+        for index in [0...no_foods]
             radar(data, index)
