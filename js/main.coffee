@@ -7,7 +7,7 @@ $ ->
 
     masonry:
       columnWidth: 240
-      gutter: 10
+      gutter: 20
 
     getSortData: cal: '.cal'
     sortBy: 'cal'
