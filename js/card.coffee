@@ -16,15 +16,23 @@ radar = (data, index=0) ->
     RadarChart.draw("#radar-chart-#{index}", it, radar_config)
 
 card = (data, index=0) ->
-    "<div class=\"item\">
-      <div id=\"radar-chart-#{index}\"></div>
-      <div class=\"item-label\">
-        <div class=\"cal\">
-          #{data.calories[index]} <span class=\"unit\">kcal</span>
+    """<div class="item">
+      <div id="radar-chart-#{index}"></div>
+      <div class="item-label">
+        <div class="cal">
+          <span class="cal-amount">#{data.calories[index]}</span>
+          <span class="unit">kcal</span>
         </div>
         #{data.foodNameTH[index]}
       </div>
-    </div>"
+      <div style="display:none">
+        <span class="water">#{data.water[index]}</span>
+        <span class="protein">#{data.protein[index]}</span>
+        <span class="fat">#{data.fat[index]}</span>
+        <span class="carbohydrate">#{data.carbohydrate[index]}</span>
+        <span class="fiberInsoluble">#{data.fiberInsoluble[index]}</span>
+      </div>
+    </div>"""
 
 $ ->
     $.getJSON 'data/foodNutrition.json', (data) ->
